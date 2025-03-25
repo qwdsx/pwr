@@ -20,16 +20,16 @@ pub struct GenArgs {
     #[arg(long, help = "length of password (default 16)")]
     pub length: Option<u16>,
 
-    #[arg(short, long, help = "boolean to NOT include numbers in the password")]
+    #[arg(short, long, help = "boolean to NOT include numbers")]
     pub numbers: bool,
 
-    #[arg(short, long, help = "boolean to NOT include uppercase letters in the password")]
+    #[arg(short, long, help = "boolean to NOT include uppercase letters")]
     pub uppercase: bool,
 
-    #[arg(short, long, help = "boolean to NOT include lowercase letters in the password")]
+    #[arg(short, long, help = "boolean to NOT include lowercase letters")]
     pub lowercase: bool,
 
-    #[arg(short, long, help = "boolean to NOT include symbols (@#$%&=+?) in the password")]
+    #[arg(short, long, help = "boolean to NOT include symbols (@#$%&=+?)")]
     pub symbols: bool,
 }
 
