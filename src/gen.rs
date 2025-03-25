@@ -1,7 +1,6 @@
 
 use rand::*;
 use rand::distributions::Uniform;
-use rngs::StdRng;
 
 pub struct Config {
     pub length: u16,

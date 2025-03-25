@@ -1,13 +1,11 @@
 
-use cli_clipboard;
+// use cli_clipboard;
 
 mod cli;
 use cli::*;
 
 mod gen;
 use gen::*;
-
-use dotenv::*;
 
 fn main() {
     let cli = Cli::new();
