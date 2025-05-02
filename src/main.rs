@@ -1,5 +1,4 @@
 
-// use cli_clipboard;
 
 mod cli;
 use cli::*;
@@ -32,7 +31,12 @@ fn main() {
             };
 
             let password = gen::generate_password(&config);
-            println!("Generated password: {}", password);
+
+            if !args.silent {
+                println!("Generated password: {}", password);
+            }else {
+                println!("{}", password);
+            }
         }
     }
 }

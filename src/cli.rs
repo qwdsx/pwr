@@ -1,6 +1,6 @@
 use clap::{Args, Parser, Subcommand};
 
-const ABOUT: &str= "CLI app that generates random passwords";
+const ABOUT: &str= "A CLI app that generates random passwords";
 
 #[derive(Parser)]
 #[clap(about = ABOUT, version)]
@@ -31,6 +31,9 @@ pub struct GenArgs {
 
     #[arg(short, long, help = "boolean to NOT include symbols (@#$%&=+?)")]
     pub symbols: bool,
+
+    #[arg(long, help = "only print the password")]
+    pub silent: bool
 }
 
 impl Cli {
